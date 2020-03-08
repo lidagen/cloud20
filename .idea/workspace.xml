@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e2823a9-4f46-4314-a80c-1fefaa9165a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../disk2/software/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../disk2/software/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YqUfsfdxIIbUja1unzfk0d8tr0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-parent" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PaymentMain8001">
+    <configuration name="com.ws.springcloud.service.impl in cloud-provider-payment8001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ws.springcloud.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ws.springcloud.service.impl" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ws.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ws.springcloud.PaymentMain8001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="JUnit.com.ws.springcloud.service.impl in cloud-provider-payment8001" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e2823a9-4f46-4314-a80c-1fefaa9165a3" name="Default Changelist" comment="" />
+      <created>1583669724581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583669724581</updated>
+      <workItem from="1583669726933" duration="8343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="430" y="125" width="800" height="684" key="#Project_Structure" timestamp="1583677509600">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="430" y="125" width="800" height="684" key="#Project_Structure/70.27.1530.873@70.27.1530.873" timestamp="1583677509600" />
+    <state x="293" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583677485204">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="293" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1530.873@70.27.1530.873" timestamp="1583677485204" />
+    <state x="643" y="173" width="374" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1583676164117">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="643" y="173" width="374" height="588" key="#com.intellij.ide.util.MemberChooser/70.27.1530.873@70.27.1530.873" timestamp="1583676164117" />
+    <state x="618" y="221" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583677480250">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="618" y="221" width="424" height="491" key="FileChooserDialogImpl/70.27.1530.873@70.27.1530.873" timestamp="1583677480250" />
+    <state width="1480" height="369" key="GridCell.Tab.0.bottom" timestamp="1583678113368">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.0.bottom/70.27.1530.873@70.27.1530.873" timestamp="1583678113368" />
+    <state width="1480" height="369" key="GridCell.Tab.0.center" timestamp="1583678113366">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.0.center/70.27.1530.873@70.27.1530.873" timestamp="1583678113366" />
+    <state width="1480" height="369" key="GridCell.Tab.0.left" timestamp="1583678113365">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.0.left/70.27.1530.873@70.27.1530.873" timestamp="1583678113365" />
+    <state width="1480" height="369" key="GridCell.Tab.0.right" timestamp="1583678113367">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.0.right/70.27.1530.873@70.27.1530.873" timestamp="1583678113367" />
+    <state width="1480" height="369" key="GridCell.Tab.1.bottom" timestamp="1583678113369">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.1.bottom/70.27.1530.873@70.27.1530.873" timestamp="1583678113369" />
+    <state width="1480" height="369" key="GridCell.Tab.1.center" timestamp="1583678113368">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.1.center/70.27.1530.873@70.27.1530.873" timestamp="1583678113368" />
+    <state width="1480" height="369" key="GridCell.Tab.1.left" timestamp="1583678113368">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.1.left/70.27.1530.873@70.27.1530.873" timestamp="1583678113368" />
+    <state width="1480" height="369" key="GridCell.Tab.1.right" timestamp="1583678113369">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.1.right/70.27.1530.873@70.27.1530.873" timestamp="1583678113369" />
+    <state width="1480" height="369" key="GridCell.Tab.2.bottom" timestamp="1583678113370">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.2.bottom/70.27.1530.873@70.27.1530.873" timestamp="1583678113370" />
+    <state width="1480" height="369" key="GridCell.Tab.2.center" timestamp="1583678113369">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.2.center/70.27.1530.873@70.27.1530.873" timestamp="1583678113369" />
+    <state width="1480" height="369" key="GridCell.Tab.2.left" timestamp="1583678113369">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.2.left/70.27.1530.873@70.27.1530.873" timestamp="1583678113369" />
+    <state width="1480" height="369" key="GridCell.Tab.2.right" timestamp="1583678113369">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state width="1480" height="369" key="GridCell.Tab.2.right/70.27.1530.873@70.27.1530.873" timestamp="1583678113369" />
+    <state x="324" y="98" width="1022" height="737" key="SettingsEditor" timestamp="1583677587615">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="324" y="98" width="1022" height="737" key="SettingsEditor/70.27.1530.873@70.27.1530.873" timestamp="1583677587615" />
+    <state x="165" y="159" width="1329" height="615" key="new project wizard" timestamp="1583674392299">
+      <screen x="70" y="27" width="1530" height="873" />
+    </state>
+    <state x="165" y="159" width="1329" height="615" key="new project wizard/70.27.1530.873@70.27.1530.873" timestamp="1583674392299" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/ws/springcloud/controller/PaymentController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
