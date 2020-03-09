@@ -19,20 +19,13 @@ public class PaymentController {
 
     @PostMapping(value = "/create")
     public CommonResult create(Payment payment){
-        int result = paymentService.create(payment);
-        if (result > 0){
-            return new CommonResult<>(200,"成功");
-        }
-        return new CommonResult(400,"插入数据库失败");
+
+        return new CommonResult<>(paymentService.create(payment));
     }
 
     @GetMapping(value="/get/{id}")
     public CommonResult<Payment> getById(@PathVariable("id") Long id){
 
-        Payment payment = paymentService.getById(id);
-        if (null != payment){
-            return new CommonResult<>(200,"success",payment);
-        }
-        return new CommonResult<>(400,"error");
+        return new CommonResult<>(paymentService.getById(id));
     }
 }

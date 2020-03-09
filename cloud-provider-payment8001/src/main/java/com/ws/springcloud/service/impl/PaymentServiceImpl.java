@@ -2,6 +2,7 @@ package com.ws.springcloud.service.impl;
 
 import com.ws.springcloud.dao.PaymentMapper;
 import com.ws.springcloud.entites.payment.Payment;
+import com.ws.springcloud.exc.AppException;
 import com.ws.springcloud.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,11 +22,19 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public int create(Payment payment) {
-        return paymentMapper.create(payment);
+        int result = paymentMapper.create(payment);
+        if (result <= 1){
+            throw new AppException("插入失败");
+        }
+        return result;
     }
 
     @Override
     public Payment getById(Long id) {
-        return paymentMapper.getById(id);
+        Payment payment = paymentMapper.getById(id);
+        if (payment == null){
+            throw new AppException("查询为空");
+        }
+        return payment;
     }
 }

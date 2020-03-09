@@ -54,7 +54,7 @@ public class MyAop {
 
         // 已知异常
         if (e instanceof AppException) {
-            result.setMessage(e.getLocalizedMessage());
+            result.setMessage(e.getMessage());
             result.setCode(401);/*
         } else if (e instanceof UnloginException) {
             result.setMsg("Unlogin");

@@ -8,11 +8,14 @@ package com.ws.springcloud.exc;
 public class AppException extends RuntimeException {
     private int code;
 
-    private String msg;
+    private String message;
 
-    public AppException(int code, String msg) {
-        super();
+    public AppException(int code, String message) {
+        super(message);
         this.code = code;
-        this.msg = msg;
+    }
+
+    public AppException(String message) {
+        super(message);
     }
 }
