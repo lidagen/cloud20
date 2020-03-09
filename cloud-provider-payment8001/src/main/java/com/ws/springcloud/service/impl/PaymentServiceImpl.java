@@ -23,7 +23,7 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public int create(Payment payment) {
         int result = paymentMapper.create(payment);
-        if (result <= 1){
+        if (result < 1){
             throw new AppException("插入失败");
         }
         return result;

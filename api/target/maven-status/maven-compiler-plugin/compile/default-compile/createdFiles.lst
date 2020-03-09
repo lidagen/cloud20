@@ -1,2 +1,4 @@
 com/ws/springcloud/common/result/CommonResult.class
+com/ws/springcloud/exc/AppException.class
 com/ws/springcloud/entites/payment/Payment.class
+com/ws/springcloud/aop/MyAop.class
