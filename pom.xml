@@ -27,7 +27,6 @@
 
   <dependencyManagement>
     <dependencies>
-
       <!--springboot 2.2.2-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -88,6 +87,21 @@
         <version>${lombok.version}</version>
         <optional>true</optional>
       </dependency>
+
+      <!--aop-->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.4</version>
+      </dependency>
+      <!-- fastjon -->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.66</version>
+      </dependency>
+
+
     </dependencies>
   </dependencyManagement>
 

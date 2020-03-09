@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * USER: wang_s
  * DATE：2020/3/8
@@ -12,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommonResult<T> {
+public class CommonResult<T> implements Serializable {
     /**
      * 返回码
      */
@@ -28,5 +30,9 @@ public class CommonResult<T> {
 
     public CommonResult(Integer code, String message) {
         this(code,message,null);
+    }
+
+    public CommonResult(T data) {
+        this(200,"success",data);
     }
 }
