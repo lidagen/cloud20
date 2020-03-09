@@ -7,14 +7,12 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
  * USER: wang_s
  * DATE：2020/3/9
- * DESC：
+ * DESC：通用结果类做AOP，拦截异常统一返回
  **/
 @Component
 @Aspect
