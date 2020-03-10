@@ -12,6 +12,11 @@ spring:
     password: root
 
 eureka:
+  instance:
+    #eureka中显示隐藏application-name
+    instance-id: payment8001
+    #访问路径显示IP
+    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
