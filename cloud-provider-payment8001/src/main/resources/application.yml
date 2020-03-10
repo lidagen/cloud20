@@ -11,6 +11,19 @@ spring:
     username: root
     password: root
 
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
+      defaultZone: http://localhost:7001/eureka/
+
+
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.ws.springcloud.entites.payment
+

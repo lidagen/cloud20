@@ -5,12 +5,12 @@ eureka:
   instance:
     hostname: localhost
   client:
-    #false表示不往注册中心注册自己
-    register-with-eureka: false
-    #fasle表示自己就是注册中心，我们的职责是维护服务实例，而不需要检索服务
-    fetch-registry: false
     service-url:
       #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
-        defaultZone: http://${eureka.instance.hostname}:${server.port}/euraka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
+
 
 
