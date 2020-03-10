@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * DATE：2020/3/8
  * DESC：
  **/
-@Service
+@Service("paymentServiceImpl")
 public class PaymentServiceImpl implements PaymentService {
     @Value("${server.port}")
     private String serverPort;

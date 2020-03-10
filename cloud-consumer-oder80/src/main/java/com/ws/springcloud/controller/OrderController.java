@@ -16,7 +16,8 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 @RequestMapping("/consumer")
 public class OrderController {
-    public static final String PAYMENT_URL="http://localhost:8001/payment";
+    /**CLOUD-PAYMENT-SERVICE是eureka中注册的名称**/
+    public static final String PAYMENT_URL="http://CLOUD-PAYMENT-SERVICE/payment";
     @Autowired
     private RestTemplate restTemplate;
 
