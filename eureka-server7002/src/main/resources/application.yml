@@ -2,6 +2,10 @@ server:
   port: 7002
 
 eureka:
+  # eureka自我保护关闭，保证服务不可用时剔除
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
   instance:
     hostname: eureka7002
   client:
