@@ -5,6 +5,7 @@ import com.ws.springcloud.entites.payment.Payment;
 import com.ws.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,8 @@ import java.util.List;
 @RequestMapping("/payment")
 @Slf4j
 public class PaymentController {
+    @Value("${server.port}")
+    private String serverPort;
     @Autowired
     private PaymentService paymentService;
     @Autowired
@@ -46,5 +49,12 @@ public class PaymentController {
             log.info("======>"+instance.getInstanceId()+"\t"+instance.getServiceId()+"\t"+instance.getPort()+"\t"+instance.getUri());
         }
         return new CommonResult<>(services);
+    }
+
+    /**服务发现**/
+    @GetMapping(value = "/getLb")
+    public CommonResult<Object> getLb(){
+
+        return new CommonResult<>(serverPort);
     }
 }
