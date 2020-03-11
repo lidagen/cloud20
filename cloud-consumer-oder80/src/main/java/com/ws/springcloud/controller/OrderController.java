@@ -45,7 +45,7 @@ public class OrderController {
     }
 
 
-    @GetMapping("/payment/getLb")
+    /*@GetMapping("/payment/getLb")
     public CommonResult getLb(){
         URI uri= null;
         List<ServiceInstance> instances = client.getInstances("CLOUD-PAYMENT-SERVICE");
@@ -56,5 +56,5 @@ public class OrderController {
         }
 
         return restTemplate.getForObject(uri+"/payment/getLb",CommonResult.class);
-    }
+    }*/
 }
