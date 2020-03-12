@@ -18,9 +18,9 @@ public class PaymentHystrixServiceImpl implements PaymentHystrixService {
         return "线程池："+Thread.currentThread().getName()+"payment_OK,id:" + id+"===>"+"OKOK";
     }
 
-    @HystrixCommand(fallbackMethod = "payInfo_TimeoutHandle",commandProperties = {
+   /* @HystrixCommand(fallbackMethod = "payInfo_TimeoutHandle",commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")
-    })
+    })*/
     @Override
     public String payment_FAIL(Integer id) {
         int time = id * 1000;
