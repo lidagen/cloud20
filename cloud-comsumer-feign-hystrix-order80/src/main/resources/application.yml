@@ -1,11 +1,10 @@
 server:
   port: 8000
 
-
 eureka:
   client:
     # 不注册🥇进EUREKA
-    register-with-eureka: false
+    register-with-eureka: true
     service-url:
       #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
@@ -14,4 +13,7 @@ ribbon:
   ReadTimeout: 5000
   # 建立连接从服务器获取可用资源的时间
   ConnectTimeout: 5000
+spring:
+  application:
+    name: cloud-consumer-feign-hystrix-order
 
