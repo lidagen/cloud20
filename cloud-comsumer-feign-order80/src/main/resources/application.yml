@@ -1,0 +1,20 @@
+server:
+  port: 8000
+
+
+eureka:
+  client:
+    # 不注册🥇进EUREKA
+    register-with-eureka: false
+    service-url:
+      #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+ribbon:
+  #建立连接所用时间，两端连接需要时间
+  ReadTimeout: 5000
+  # 建立连接从服务器获取可用资源的时间
+  ConnectTimeout: 5000
+logging:
+  level:
+    # 可以详细设置哪一个接口，也可以到包
+    com.ws.springcloud.service.PaymentFeignService: debug

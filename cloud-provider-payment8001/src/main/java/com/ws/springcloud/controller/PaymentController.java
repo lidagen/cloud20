@@ -57,4 +57,17 @@ public class PaymentController {
 
         return new CommonResult<>(serverPort);
     }
+
+    /**3秒超时**/
+    @GetMapping(value = "/feign/timeOut")
+    public CommonResult<String> timeOut(){
+
+        try {
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        return new CommonResult<>(serverPort);
+    }
 }
