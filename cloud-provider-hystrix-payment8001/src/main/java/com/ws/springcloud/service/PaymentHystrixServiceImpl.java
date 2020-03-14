@@ -18,9 +18,7 @@ public class PaymentHystrixServiceImpl implements PaymentHystrixService {
         return "线程池："+Thread.currentThread().getName()+"payment_OK,id:" + id+"===>"+"OKOK";
     }
 
-   /* @HystrixCommand(fallbackMethod = "payInfo_TimeoutHandle",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")
-    })*/
+
     @Override
     public String payment_FAIL(Integer id) {
         int time = id * 1000;
@@ -33,9 +31,7 @@ public class PaymentHystrixServiceImpl implements PaymentHystrixService {
         return "线程池："+Thread.currentThread().getName()+"payment_Timeout,id:" + id+"===>"+"OUT +333+ OUT";
     }
 
-
-    private String payInfo_TimeoutHandle(Integer id){
-        return "线程池："+Thread.currentThread().getName()+"8001系統繁忙或运行错误，請稍候再試,id:" + id+"===>"+"超时啦！！！";
-
-    }
+    /***
+     * 服务熔断
+     */
 }
