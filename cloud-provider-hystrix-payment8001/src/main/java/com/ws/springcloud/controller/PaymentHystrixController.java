@@ -1,6 +1,8 @@
 package com.ws.springcloud.controller;
 
+import cn.hutool.core.util.IdUtil;
 import com.ws.springcloud.common.result.CommonResult;
+import com.ws.springcloud.exc.AppException;
 import com.ws.springcloud.service.PaymentHystrixService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,4 +35,13 @@ public class PaymentHystrixController {
         log.info("result:" + payment_FAIL);
         return new CommonResult(payment_FAIL);
     }
+
+    @GetMapping(value = "/payment/hystrix/getId/{id}")
+    public String getId(@PathVariable("id") Integer id){
+
+        String getInteger = paymentHystrixService.getInteger(id);
+        return getInteger;
+    }
+
+
 }

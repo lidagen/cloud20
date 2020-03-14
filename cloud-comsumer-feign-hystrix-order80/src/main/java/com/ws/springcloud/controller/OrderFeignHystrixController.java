@@ -31,5 +31,16 @@ public class OrderFeignHystrixController {
         return timeout;
     }
 
+    /**
+     * 断路器测试 >1 正常，小于1 异常走fallback
+     * @param id
+     * @return
+     */
+    @GetMapping(value = "/client/hystrix/getId/{id}")
+    CommonResult getId(@PathVariable("id") Integer id){
+
+        return new CommonResult(orderFeignHystrixService.getId(id));
+    }
+
 
 }

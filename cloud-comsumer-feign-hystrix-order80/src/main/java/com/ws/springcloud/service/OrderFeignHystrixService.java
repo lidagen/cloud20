@@ -17,4 +17,7 @@ public interface OrderFeignHystrixService {
     @GetMapping(value = "/payment/hystrix/timeout/{id}")
     CommonResult timeout(@PathVariable("id") Integer id);
 
+    @GetMapping(value = "/payment/hystrix/getId/{id}")
+    String getId(@PathVariable("id") Integer id);
+
 }
