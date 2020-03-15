@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 
 spring:
   application:
@@ -10,7 +10,7 @@ spring:
       name: application #配置文件名
       profile: dev #配置文件后缀 两个合起来就是github上的 application-dev
       uri: http://localhost:3344 #配置中心server IP地址
-  rabbitmq: #RabbitMQ配置
+  rabbitmq:
     host: localhost
     port: 5672
     username: admin
