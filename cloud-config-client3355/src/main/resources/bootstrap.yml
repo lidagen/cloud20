@@ -1,0 +1,24 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #分支名
+      name: application #配置文件名
+      profile: dev #配置文件后缀 两个合起来就是github上的 application-dev
+      uri: http://localhost:3344 #配置中心server IP地址
+
+eureka:
+  client:
+    service-url:
+      #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
