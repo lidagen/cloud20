@@ -44,6 +44,11 @@ public class OrderController {
         return restTemplate.getForObject(PAYMENT_URL+"/get/"+id,CommonResult.class);
     }
 
+    @GetMapping("/payment/getZipkin")
+    public CommonResult getZipkin(){
+            return restTemplate.getForObject(PAYMENT_URL+"/zipkin",CommonResult.class);
+    }
+
 
     /*@GetMapping("/payment/getLb")
     public CommonResult getLb(){

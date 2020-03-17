@@ -70,4 +70,9 @@ public class PaymentController {
 
         return new CommonResult<>(serverPort);
     }
+
+    @GetMapping("/zipkin")
+    public CommonResult getZipkin(){
+        return new CommonResult("zipkin调用成功！！！");
+    }
 }
