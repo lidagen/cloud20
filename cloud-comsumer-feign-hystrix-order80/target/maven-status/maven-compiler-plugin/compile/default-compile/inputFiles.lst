@@ -1,0 +1,4 @@
+/media/ws/disk1/javaworkspace/cloud20/cloud-comsumer-feign-hystrix-order80/src/main/java/com/ws/springcloud/OrderFeignHystrix80.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-comsumer-feign-hystrix-order80/src/main/java/com/ws/springcloud/service/OrderFeignHystrixService.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-comsumer-feign-hystrix-order80/src/main/java/com/ws/springcloud/service/FeignHystrixFallbackService.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-comsumer-feign-hystrix-order80/src/main/java/com/ws/springcloud/controller/OrderFeignHystrixController.java

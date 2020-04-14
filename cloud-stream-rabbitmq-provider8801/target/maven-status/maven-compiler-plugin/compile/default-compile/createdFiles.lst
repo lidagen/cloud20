@@ -1,0 +1,4 @@
+com/ws/springcloud/service/SendMessage.class
+com/ws/springcloud/service/SendMessageImpl.class
+com/ws/springcloud/controller/MessageController.class
+com/ws/springcloud/StreamRabbitProvider8801.class

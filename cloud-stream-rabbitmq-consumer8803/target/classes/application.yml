@@ -1,0 +1,38 @@
+server:
+  port: 8803
+
+
+spring:
+  application:
+    name: stream-rabbitmq-consumer
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: admin
+                password: admin
+      bindings:
+        input: # 消费者这里是input
+          destination: studyExchange
+          content-type: application/json
+          group: consumerA # 分组，同一服务多个实例只接收消息一次
+         # binder: defaultRabbit
+
+
+
+eureka:
+  client:
+    service-url:
+      #设置与eureka交互的地址查询服务和注册服务需要依赖这个地址
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 2 #
+    lease-expiration-duration-in-seconds: 5
+    instance-id: send-8801.com
+    prefer-ip-address: true

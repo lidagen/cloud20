@@ -1,0 +1,4 @@
+com/ws/springcloud/PaymentHystrix8001.class
+com/ws/springcloud/service/PaymentHystrixService.class
+com/ws/springcloud/controller/PaymentHystrixController.class
+com/ws/springcloud/service/PaymentHystrixServiceImpl.class

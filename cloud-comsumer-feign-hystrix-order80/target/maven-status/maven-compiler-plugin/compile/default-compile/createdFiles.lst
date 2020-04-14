@@ -1,0 +1,4 @@
+com/ws/springcloud/controller/OrderFeignHystrixController.class
+com/ws/springcloud/OrderFeignHystrix80.class
+com/ws/springcloud/service/OrderFeignHystrixService.class
+com/ws/springcloud/service/FeignHystrixFallbackService.class

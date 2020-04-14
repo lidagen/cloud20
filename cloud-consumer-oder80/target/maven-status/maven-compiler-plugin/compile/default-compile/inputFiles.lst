@@ -1,0 +1,6 @@
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/springcloud/controller/OrderController.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/ribbon/RibbonConfig.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/springcloud/lb/MyLB.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/springcloud/lb/LoadBalance.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/springcloud/OrderMain80.java
+/media/ws/disk1/javaworkspace/cloud20/cloud-consumer-oder80/src/main/java/com/ws/springcloud/config/ApplicationConfig.java
