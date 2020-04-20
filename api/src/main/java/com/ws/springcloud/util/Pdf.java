@@ -15,9 +15,21 @@ import java.io.IOException;
  * DESC：
  **/
 public class Pdf {
-    // 将word格式的文件转换为pdf格式
+
+    /**确定系统中装了 libreoffice 套件
+     * sudo find / -name libreoffice
+     * 搜索自己系统中是否存在以及位置
+     * **/
+    private static final String APP_PATH = "/usr/lib/libreoffice";
+
+
+    /**
+     * word格式的文件转换为pdf格式
+     * @param inputDoc 需要转化的doc
+     * @param outputPdf 输入位置
+     * @throws IOException
+     */
     public static void WordToPDF(String inputDoc, String outputPdf) throws IOException {
-        String APP_PATH = "/usr/lib/libreoffice";
 
         File inputFile = new File(inputDoc);
         File outputFile = new File(outputPdf);
@@ -42,7 +54,7 @@ public class Pdf {
 
     public static void main(String[] args) throws Exception{
         String source = "/home/ws/下载/王淞java求职简历-1.docx";
-        String target = "/home/ws/下载/zh.pdf";
+        String target = "/home/ws/下载/王淞的java求职简历.pdf";
         Pdf.WordToPDF(source,target);
 
     }
