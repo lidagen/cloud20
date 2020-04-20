@@ -24,7 +24,32 @@
 + redis 对访问频繁的热点数据做缓存，减少数据库IO操作，计数可以做sequece生成唯一主键、bitmaps还可以来统计一个数据是否访问过、GEO可以做地理位置相关的操作
 + 消息中间件，主要用来系统间传递消息，具有削峰、填谷、以及系统间解耦。业务上有大量业务数据需要发给下游系统，如果考虑RPC的话，一个是频繁请求消耗过大，还有就是发送业务速度快与下游处理的速度，会导致数据处理不过来导致的失败，而使用中间件，可以拉数据，根据自己业务处理能力来消费消息 
 
-## 多线程 synchronized lock volatile ThreadLocal countDownLatch 线程池
+## 多线程 
+## 为什么用线程池
++ 线程创建和销毁过程，都有性能开销，还可以控制线程数量。
++ 使用场景：
+  - 异步任务处理的，不是主流程的，比如业务中，清算以后要下发明细，但是还需要明细计提数据
+  - 发服务号通知业务
+## threadpoolexcutor,线程池参数
++ 核心线程数
++ 最大线程数
++ 空闲线程存活时间
++ 存活时间单位
++ 工作队列 ：ArrayQ 有界 LinkedQ 无界 synchronusQ不缓存任务的阻塞队列 prorityQ优先级的无界阻塞队列
++ 线程工厂：设定线程名，是否守护线程
++ 拒绝策略：callerRuns直接执行被拒绝的线程，如果县城池shutdown则抛弃 *Abort （默认） 丢弃抛异常 Discard 丢弃 DiscardOldest 丢弃最老的一个，并将新的加入
+
+### 线程内部使用规则
+### AtomicInteger怎么用的
+### 用过threadLocal吗？
+### 程序、进程、线程区别？举例
+### java中哪些方法创建多线程
+### Thread类有没有实现Runable接口
+### 当调用一个线程start()方法，线程马上进入运行状态吗
+### 线程的状态
+### sleep\yield\join\wait方法区别
+### 为什么不推荐stop和destory方法结束线程运行
+### 终止线程的正确方式
 ### synchronized
 + synchronized锁，多线程情况下，保证对实例变量线程安全
 + synchronized可以加在方法上和同步代码块，synchronized 加方法上或者sychronized(this)锁的都是对象，会对其它锁对象的同步方法阻塞
