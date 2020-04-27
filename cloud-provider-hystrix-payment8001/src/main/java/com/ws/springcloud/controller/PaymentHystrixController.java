@@ -1,8 +1,6 @@
 package com.ws.springcloud.controller;
 
-import cn.hutool.core.util.IdUtil;
 import com.ws.springcloud.common.result.CommonResult;
-import com.ws.springcloud.exc.AppException;
 import com.ws.springcloud.service.PaymentHystrixService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
